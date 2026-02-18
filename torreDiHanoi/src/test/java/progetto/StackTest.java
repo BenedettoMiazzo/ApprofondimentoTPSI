@@ -33,4 +33,12 @@ public class StackTest {
       stack.push(10);
       assertEquals(10,stack.peek());
     }
+
+    @Test
+    public void testSize() {
+      Stack<Integer> stack = new Stack<>();
+      assertEquals(0, stack.size());
+      stack.push(5);
+      assertEquals(1, stack.size());
+    }
 }

@@ -30,4 +30,8 @@ public class Stack<E> {
         }
         return data.get(data.size() - 1);
     }
+
+    public int size(){
+        return data.size();
+    }
 }
