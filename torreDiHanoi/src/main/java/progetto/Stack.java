@@ -34,4 +34,8 @@ public class Stack<E> {
     public int size(){
         return data.size();
     }
+    
+    public E elementAt(int index){
+    return data.get(index);
+    }
 }
