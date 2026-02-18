@@ -8,7 +8,21 @@ public class StackTest {
     public void testNewStackIsEmpty() {
         Stack<Integer> stack = new Stack<>();
         assertTrue(stack.isEmpty());
+    }
+
+    @Test
+    public void testPushMakesStackNonEmpty() {
+        Stack<Integer> stack = new Stack<>();
         stack.push(10);
         assertFalse(stack.isEmpty());
+    }
+
+    @Test
+    public void testPushThenPop() {
+        Stack<String> stack = new Stack<>();
+        stack.push("hello");
+        String item = stack.pop();
+        assertEquals("hello", item);
+        assertTrue(stack.isEmpty());
     }
 }
