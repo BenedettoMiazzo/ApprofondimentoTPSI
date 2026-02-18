@@ -16,5 +16,18 @@ public class Stack<E> {
       public boolean isEmpty() {
       return data.isEmpty();
     }
-  
+
+    public E pop() {
+        if (isEmpty()) {
+            return null;
+        }
+        return data.remove(data.size() - 1);
+    }
+
+    public E peek() {
+        if (isEmpty()) {
+            return null;
+        }
+        return data.get(data.size() - 1);
+    }
 }
